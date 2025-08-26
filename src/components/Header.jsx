@@ -2,6 +2,7 @@
 function Header({ cart }) {
     // State Derivado
     const isEmpty = () => cart.length === 0
+    const cartTotal = () => cart.reduce((total, item) => total + (item.quantity * item.price), 0)
 
     return (
         <header className="py-5 header">
@@ -69,7 +70,7 @@ function Header({ cart }) {
                                             </tbody>
                                         </table>
 
-                                        <p className="text-end">Total pagar: <span className="fw-bold">$899</span></p>
+                                        <p className="text-end">Total pagar: <span className="fw-bold">${cartTotal()}</span></p>
                                     </>
                                 )}
 
