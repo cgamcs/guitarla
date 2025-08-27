@@ -55,10 +55,6 @@
   margin: 0 3px;
 }
 
-#carrito button {
-  border-radius: 10px;
-}
-
 .m-0 {
   margin: 0;
 }
@@ -764,8 +760,6 @@ button:not(:disabled),
 }
 .header {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/header.jpg");
-  /** TODO: Eliminar la sig linea **/
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../public/img/header.jpg");
   background-position: 50%;
   background-size: cover;
   position: relative;
@@ -785,4 +779,8 @@ button:not(:disabled),
     animation-name: animarImagen;
     z-index: 10;
   }
+}
+
+.btn-dark {
+  border-radius: 10px;
 }
