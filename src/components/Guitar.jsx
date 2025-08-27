@@ -1,6 +1,6 @@
 
 function Guitar({guitar, addToCart}) {
-    const {id, name, description, image, price} = guitar
+    const { name, description, image, price} = guitar
 
     return (
         <div className="col-md-6 col-lg-4 my-4 row align-items-center">
